@@ -1,0 +1,37 @@
+in operator------Obyekt ichida ma'lum bir property bor yoki yo'qligini tekshirish ("name" in user).
+Massivlarga------Type berish	Massiv elementlarining turini aniq ko'rsatish (number[], Array<string>).
+Tuple------Massivning uzunligi va elementlarining turi aniq belgilanadi ([string, number]).
+Enum------O‘zgaruvchilarga aniq qiymatlar bog‘lash uchun ishlatiladi (enum Status {Success, Error}).
+Class------Obyekt yaratish va obyektga yo‘naltirilgan dasturlash (OOP) bilan ishlash.
+Interface------Obyektlar tuzilishini belgilash va sinflar uchun shartlar qo‘yish.
+Abstract Clas------To‘liq implementatsiya qilinmagan klass bo‘lib, undan voris olish kerak.
+Function Signature------Funksiya parametrlari va natija turini oldindan belgilash imkonini beradi.
+Function Overloads------Bir xil nomdagi, lekin har xil turdagi parametrlarni qabul qiluvchi funksiyalarni yaratish usuli.
+Type Inference------TypeScript kod ichida avtomatik ravishda tur (type) ni aniqlaydi.
+Type Annotation------O‘zgaruvchi, funksiya yoki obyekt uchun aniq tur (type) ko‘rsatish.
+Unknown Type (unknown)------Xavfsizroq any, tur o‘zgartirishdan oldin tekshirish talab etiladi.
+Union Types------Bir necha turdagi qiymatlar olish imkonini beruvchi tiplari birlashmasi (`string)
+Literal Types------O‘zgaruvchini faqat ma’lum bir qiymatlar bilan cheklash (`"success")
+Type Aliase------Murakkab yoki ko‘p ishlatiladigan turlar uchun maxsus nom yaratish (type UserId = string).
+Optional Properties------------Obyektning ayrim xususiyatlari majburiy emasligini bildiradi (email?: string).
+Readonl------Obyekt xususiyatlarini faqat o‘qish uchun belgilaydi (readonly id: number).
+in operator------Obyekt ichida ma'lum bir property bor yoki yo‘qligini tekshirish ("name" in user).
+Utility Type-------Mavjud turlar bilan ishlashni osonlashtiruvchi yordamchi turlar (Partial<T>, Required<T>, Readonly<T>).
+BigInt---------Juda katta butun sonlar bilan ishlash imkonini beruvchi tur (`12345678901234567890n`).
+Nullish Assignment----Agar o‘zgaruvchi `null` yoki `undefined` bo‘lsa, unga yangi qiymat berish (`x ??= "default"`).
+Chaining Operator-----Obyekt yoki xususiyat mavjud bo‘lmasa, `undefined` qaytaradigan operator (`user?.profile?.name`).
+Operator------JavaScript va TypeScript'dagi mantiqiy va arifmetik operatorlar (`+`, `-`, `&&`, `||`, `!`).
+Foydalanuvchi Ma’lumotlarini Tekshirish -----Obyekt, o‘zgaruvchi yoki tur haqidagi ma’lumotlarni tekshirish (`typeof`, `instanceof`, `in`).
+Utility Type---Mavjud turlar bilan ishlashni osonlashtiruvchi yordamchi turlar.  
+Partial<T>---Obyektning barcha xususiyatlarini ixtiyoriy (`optional`) qiladi.  
+Required<T>---Obyektning barcha `optional` xususiyatlarini majburiy qiladi.  
+Readonly<T>---Obyekt xususiyatlarini faqat o‘qish (`readonly`) uchun belgilaydi.  
+Pick<T, K>---Berilgan obyekt tipidan faqat kerakli xususiyatlarni ajratib oladi.  
+Omit<T, K>---Berilgan obyekt tipidan ma’lum xususiyatlarni olib tashlaydi.  
+Record<K, T>---Berilgan `K` kalitlari uchun `T` tipidagi obyekt yaratadi.  
+Extract<T, U> ----`T` turidan `U` ga mos keladigan qiymatlarni ajratib oladi.  
+Exclude<T, U> ----`T` turidan `U` ga mos keladigan qiymatlarni olib tashlaydi.  
+NonNullable<T>----`null` va `undefined` qiymatlarni chiqarib tashlaydi.  
+ReturnType<T>  ------Funksiya natijasining turini aniqlaydi.  
+InstanceType<T>------Berilgan sinf (`class`) dan hosila bo‘lgan obyekt turini qaytaradi.  
+
