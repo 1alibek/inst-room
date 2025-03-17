@@ -1,68 +1,39 @@
 import React from "react";
+import { cardData } from "../../utils";
+import { CiHeart } from "react-icons/ci";
+import { Button } from "antd";
 
-import img1 from "../../assets/img/1.png";
-import img2 from "../../assets/img/2.png";
-import img3 from "../../assets/img/3.png";
 const Card = () => {
   return (
-    <div className="container2">
-      <div className="flex items-center gap-5 max-[1200px]:flex-col">
-        <div>
-          <p className="text-[22px] max-[500px]:text-[16px]">
-            Отказались от не разумной логистики <br />
-            <span className="font-bold">
-              Покупайте металлопрокат в вашем городе
-            </span>
-          </p>
-          <br />
-          <p>
-            Раньше мы закупали сырье у различных поставщиков, везли его к себе
-            на базу в Магнитогорске, производили продукцию и после этого
-            отправляли своим клиентам по РФ. Сейчас у нас есть договоренности с
-            нашими партнерами во всех региональных центрах и производство на
-            аутсорсинге. Мы так же самостоятельно закупаем металл и производим
-            металлопрокат на производствах наших партнеров
-          </p>
-        </div>
-        <img src={img1} alt="" />
-      </div>
-      <div className="flex items-center gap-5 max-[1200px]:flex-col-reverse">
-        <img src={img2} alt="" />
-        <div>
-          <p className="text-[22px] max-[500px]:text-[16px]">
-            Вы не переплачиваете <br />
-            <span className="font-bold">Покупайте у производителя</span>
-          </p>
-          <br />
-          <p>
-            Мы точно так же закупаем сырье, например у поставщика в Липецке и
-            там же заказываем в производство металлопрокат. За счет больших
-            объемов продаж, мы получаем хорошую скидку и экномим на логистике.
-            Так мы делаем в 26 крупных городах РФ
-          </p>
-        </div>
-      </div>
-      <div className="flex items-center gap-5 max-[1200px]:flex-col">
-        <div>
-          <p className="text-[22px] max-[500px]:text-[16px]">
-          Покупайте качественный металлопрокат <br />
-            <span className="font-bold">
-                   
-У нас строгие нормы контроля
-и требования к производству
-            </span>
-          </p>
+    <div className="bg-gray-900">
 
-          <br />
-          <p>
-          Наше собственное производство находится в Магнитогорске.
-Мы изготавливаем продукцию строго по ГОСТ и ТЗ.
-Дорожим нашей деловой репутацией и требуем качества
-от наших партнеров.
-          </p>
+   
+    <div className="container2 !py-8  text-white min-h-screen">
+        <div className="flex items-center justify-between py-4 pb-6">
+            <p className="text-white font-medium text-[32px] max-[500px]:text-[20px]">Популярное</p>
+            <Button className="!text-white !font-medium !border-none max-[500px]:!hidden !rounded-full !bg-[#EC8F32] !px-6 !h-[42px] ">
+            Смотреть все
+              </Button>
         </div>
-        <img src={img3} alt="" />
+      <div className="grid grid-cols-5 max-[1200px]:!grid-cols-4 max-[1000px]:!grid-cols-3 max-[750px]:!grid-cols-2 max-[500px]:!grid-cols-1 gap-6">
+        {cardData.map((card) => (
+          <div
+            key={card.id}
+          >
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4">
+              <p className="text-sm text-gray-400 mb-1">{card.metadata}</p>
+              <h3 className="text-lg font-medium mb-1">{card.title}</h3>
+             
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
     </div>
   );
 };

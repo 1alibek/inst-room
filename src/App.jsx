@@ -1,22 +1,24 @@
 import React from "react";
 import Header from "./components/header";
 import Showcase from "./components/showcase";
-import Box from "./components/box";
-import Ostatka from "./components/ostatki";
-import Bg from "./components/bg";
+import Video from "./components/video";
+import Brand from "./components/brand";
+import Footer from "./components/footer";
 import Card from "./components/card";
-import Serteficate from "./components/serteficate";
+import SwiperComponent from "./components/swiper";
+
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Showcase />
-      <Box/>
-      <Ostatka/>
-      <Bg/>
+      <SwiperComponent/>
       <Card/>
-      <Serteficate/>
+      <Video/>
+      <Showcase />
+      <Brand/>
+      <Footer/>
+   
     </div>
   );
 };

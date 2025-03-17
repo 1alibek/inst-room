@@ -15,3 +15,31 @@
   }
 }
 
+
+.header{
+  background: rgba(0, 0, 0, 0.92);
+opacity: 0.8;
+}
+.txt{
+
+line-height: 97%;
+background: linear-gradient(203deg, #fff 0%, rgba(255, 255, 255, 0.42) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ec8f32 !important;
+    opacity: 1;
+}
